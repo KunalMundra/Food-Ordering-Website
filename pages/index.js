@@ -4,7 +4,7 @@ import styles from '../styles/Home.module.css';
 import Slider from '../Components/Slider';
 import PizzaList from '../Components/PizzaList';
 
-export default function Home() {
+const Home = () => {
   return (
     <div className={styles.container}>
       <Head>
@@ -16,3 +16,5 @@ export default function Home() {
     </div>
   )
 }
+
+export default Home
