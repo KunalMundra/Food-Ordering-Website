@@ -48,6 +48,8 @@ const Product = () => {
                             className={styles.checkbox}
                         />
                         <label htmlFor="double">Double Ingredients</label>
+                    </div>
+                    <div className={styles.options}>
                         <input
                             type="checkbox"
                             id="cheese"
@@ -55,6 +57,8 @@ const Product = () => {
                             className={styles.checkbox}
                         />
                         <label htmlFor="cheese">Extra cheese</label>
+                    </div>
+                    <div className={styles.options}>
                         <input
                             type="checkbox"
                             id="Spicy"
@@ -62,6 +66,8 @@ const Product = () => {
                             className={styles.checkbox}
                         />
                         <label htmlFor="Spicy">Spicy Sauce</label>
+                    </div>
+                    <div className={styles.options}>
                         <input
                             type="checkbox"
                             id="garlic"

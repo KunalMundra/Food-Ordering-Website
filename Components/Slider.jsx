@@ -14,7 +14,7 @@ const Slider = () => {
             setindex(index !== 2 ? index+1 : 0)
         }
     }
-    console.log(index)
+    // console.log(index)
 
     const images = [
         "/img/Slide1.png",

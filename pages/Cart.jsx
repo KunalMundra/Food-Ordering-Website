@@ -20,8 +20,7 @@ const Cart = () => {
                                 <div className={styles.imgContainer}>
                                     <Image
                                         src="/img/Pizza1.png"
-                                        width="100"
-                                        height="100"
+                                        fill={true}
                                         alt=""
                                     />
                                 </div>
@@ -49,8 +48,7 @@ const Cart = () => {
                                 <div className={styles.imgContainer}>
                                     <Image
                                         src="/img/Pizza1.png"
-                                        width="100"
-                                        height="100"
+                                        fill={true}
                                         alt=""
                                     />
                                 </div>

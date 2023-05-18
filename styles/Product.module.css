@@ -1,9 +1,9 @@
-.container{
+.container {
     height: calc(100vh - 100px);
     display: flex;
 }
 
-.left{
+.left {
     flex: 1;
     height: 100%;
     display: flex;
@@ -11,55 +11,55 @@
     justify-content: center;
 }
 
-.right{
+.right {
     flex: 1;
 }
 
-.imgcontainer{
+.imgcontainer {
     width: 70%;
     height: 80%;
     position: relative;
 }
 
-.name{
+.name {
     padding: 20px 0;
 }
 
-.price{
+.price {
     font-size: 24px;
     font-weight: 400;
     border-bottom: 2px solid;
-    
+
 }
 
-.desc{
+.desc {
     padding: 20px 0;
 }
 
-.sizes{
+.sizes {
     width: 40%;
     display: flex;
     justify-content: space-between;
 }
 
-.size{
+.size {
     width: 30px;
     height: 30px;
     position: relative;
     cursor: pointer;
 }
 
-.size:nth-child(2){
+.size:nth-child(2) {
     width: 40px;
     height: 40px;
 }
 
-.size:last-child{
+.size:last-child {
     width: 50px;
     height: 50px;
 }
 
-.number{
+.number {
     position: absolute;
     top: -5px;
     right: -20px;
@@ -70,28 +70,29 @@
     border-radius: 10px;
 }
 
-.ingredients{
+.ingredients {
     display: flex;
     margin-bottom: 30px;
 }
 
-.options{
+.options {
     display: flex;
     align-items: center;
     font-size: 16px;
     font-weight: 500;
 }
-.checkbox{
+
+.checkbox {
     width: 20px;
     height: 20px;
 }
 
-.add{
+.add {
     width: 35px;
     height: 35px;
 }
 
-.button{
+.button {
     margin-left: 10px;
     background-color: #006491;
     border: none;
@@ -99,4 +100,53 @@
     font-size: 16px;
     font-weight: 400;
     cursor: pointer;
+}
+
+
+@media screen and (max-width:480px) {
+    .container {
+        height: auto;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .imgcontainer {
+        width: 50vw;
+        height: 40vh;
+    }
+
+    .title {
+        margin: 5px;
+    }
+
+    .sizes {
+        width: 100%;
+        padding: 0px 30px;
+    }
+
+    .ingredients {
+        flex-direction: column;
+        margin-left: 40px;
+    }
+
+    .options {
+        font-size: 18px;
+    }
+
+    .checkbox {
+        width: 25px;
+        height: 25px;
+    }
+
+    .add {
+        height: 50px;
+        width: 50px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .button {
+        height: 50px;
+        margin-bottom: 20px;
+    }
 }

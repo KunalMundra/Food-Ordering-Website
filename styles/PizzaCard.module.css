@@ -1,4 +1,4 @@
-.container{
+.container {
     width: 22%;
     padding: 10px;
     display: flex;
@@ -9,18 +9,33 @@
     cursor: pointer;
 }
 
-.title{
+.title {
     font-size: 18px;
     font-weight: bold;
     padding: 10px;
 }
 
-.price{
+.price {
     font-size: 18px;
     font-weight: bold;
 }
 
-.desc{
+.desc {
     text-align: center;
-    
+
+}
+
+@media screen and (max-width:480px) {
+    .container {
+        width: 100%;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .price,
+    .desc {
+        font-size: 24px;
+    }
 }

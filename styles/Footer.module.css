@@ -1,38 +1,66 @@
-.container{
+.container {
     height: calc(100vh - 100px);
     background-color: #222;
     display: flex;
 }
 
-.item{
+.item {
     position: relative;
     display: flex;
     flex: 1;
 }
 
-.item:last-child{
+.item:last-child {
     flex: 2;
     padding: 50px;
     justify-content: space-between;
 }
 
-.card{
+.card {
     padding: 0 40px;
 }
 
-.title{
+.title {
     font-size: 24px;
     color: #ebab23;
 
 }
 
-.text{
+.text {
     padding: 20px 0;
     color: lightgray;
     font-size: 15px;
 }
 
-.motto{
+.motto {
     font-size: 30px;
     color: rgb(211, 211, 211);
+}
+
+@media screen and (max-width:480px) {
+    .container {
+        height: auto;
+        text-align: center;
+    }
+
+    .item:first-child {
+        display: none;
+    }
+
+    .item {
+        flex-direction: column;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .text {
+        font-size: 20px;
+    }
+
+    .motto {
+        margin-bottom: 30px;
+
+    }
 }

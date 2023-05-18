@@ -1,38 +1,38 @@
-.container{
+.container {
     padding: 50px;
     display: flex;
 }
 
-.left{
+.left {
     flex: 2;
 }
 
-.right{
+.right {
     flex: 1;
 }
 
-.imgcontainer{
+.imgContainer {
     width: 100px;
     height: 100px;
     position: relative;
 }
 
-.table{
+.table {
     width: 100%;
     border-spacing: 20px;
 }
 
-.name{
+.name {
     font-weight: 500;
     font-size: 18px;
 }
 
-.total{
+.total {
     font-weight: 500;
     font-size: 18px;
 }
 
-.wrapper{
+.wrapper {
     width: 90%;
     max-height: 300px;
     background-color: #333;
@@ -44,20 +44,81 @@
     margin-top: 20px;
 }
 
-.title{
+.title {
     padding: 20px 0;
 }
 
-.totalTextTitle{
+.totalTextTitle {
     margin-right: 10px;
 }
 
-.button{
+.button {
     width: 100%;
     font-weight: bold;
     cursor: pointer;
     margin-top: 10px;
     background-color: white;
-    color:  black;
+    color: black;
     border: none;
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .table {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .trTitle {
+        display: none;
+    }
+
+    .tr {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .imgContainer {
+        width: 200px;
+        height: 200px;
+    }
+
+    .name,
+    .total {
+        font-size: 22px;
+    }
+
+    .extras,
+    .price,
+    .quantity {
+        font-size: 20px;
+    }
+
+    .price::before {
+        content: "Price: ";
+        font-weight: 500;
+    }
+
+    .quantity::before {
+        content: "Quantity: ";
+        font-weight: 500;
+    }
+
+    .total::before {
+        content: "Total: ";
+        font-weight: 500;
+    }
+
+    .wrapper {
+        width: 100%;
+    }
 }
